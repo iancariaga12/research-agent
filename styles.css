@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap');
+
+* { box-sizing: border-box; }
+
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #0a0a0a;
+    color: #e8e4dc;
+}
+
+[data-testid="stAppViewContainer"] {
+    background: #0a0a0a;
+    background-image: radial-gradient(ellipse at 20% 50%, #1a1205 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 20%, #0d1a0d 0%, transparent 50%);
+}
+
+[data-testid="stHeader"] { background: transparent; }
+
+h1 {
+    font-family: 'DM Serif Display', serif !important;
+    font-size: 4rem !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.02em !important;
+    color: #f0ebe0 !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.2rem !important;
+}
+
+.subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    color: #6b6456;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+[data-testid="stTextInput"] input {
+    background: #111111 !important;
+    border: 1px solid #2a2520 !important;
+    border-radius: 2px !important;
+    color: #e8e4dc !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.95rem !important;
+    padding: 1rem 1.2rem !important;
+}
+
+[data-testid="stTextInput"] input:focus {
+    border-color: #c8a96e !important;
+    box-shadow: 0 0 0 1px #c8a96e22 !important;
+}
+
+[data-testid="stTextInput"] input::placeholder {
+    color: #3a3530 !important;
+}
+
+[data-testid="stTextInput"] label {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.7rem !important;
+    color: #6b6456 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+}
+
+[data-testid="stSelectbox"] > div > div {
+    background: #111111 !important;
+    border: 1px solid #2a2520 !important;
+    border-radius: 2px !important;
+    color: #e8e4dc !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.85rem !important;
+}
+
+[data-testid="stSelectbox"] label {
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.7rem !important;
+    color: #6b6456 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+}
+
+.stButton button {
+    background: #c8a96e !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    opacity: 1 !important;
+    border: none !important;
+    border-radius: 2px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    padding: 0.6rem 1.5rem !important;
+    transition: all 0.2s !important;
+    height: 46px !important;
+    line-height: 1 !important;
+}
+
+.stButton button:hover {
+    background: #d4b87a !important;
+    transform: translateY(-1px) !important;
+}
+
+.stButton button:disabled {
+    background: #1e1a14 !important;
+    color: #3a3530 !important;
+    -webkit-text-fill-color: #3a3530 !important;
+}
+
+.stDownloadButton button {
+    background: transparent !important;
+    color: #c8a96e !important;
+    border: 1px solid #c8a96e44 !important;
+    border-radius: 2px !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.72rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.18em !important;
+    text-transform: uppercase !important;
+    padding: 0.5rem 1rem !important;
+    width: 100% !important;
+    transition: all 0.2s !important;
+}
+
+.stDownloadButton button:hover {
+    background: #c8a96e15 !important;
+    border-color: #c8a96e !important;
+    box-shadow: 0 0 12px #c8a96e22 !important;
+}
+
+.tool-call {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: #8a7a5a;
+    padding: 0.4rem 0.8rem;
+    border-left: 2px solid #2a2520;
+    margin: 0.3rem 0;
+    background: #0f0f0f;
+}
+
+.tool-call span { color: #c8a96e; }
+
+.status-bar {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: #6b6456;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    border-top: 1px solid #1a1a1a;
+    margin-top: 1rem;
+}
+
+div[data-testid="stStatusWidget"] {
+    background: #111111 !important;
+    border: 1px solid #2a2520 !important;
+    border-radius: 2px !important;
+    font-family: 'DM Mono', monospace !important;
+}
+
+div[data-testid="stStatusWidget"] + div {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.report-header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #2a2520;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+h1 a, h2 a {
+    display: none !important;
+}
+
+.format-tag {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #f5f0e8;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.report-body-marker {
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.report-body-marker + div {
+    padding: 2.5rem 3rem !important;
+    background: #0f0f0f !important;
+    border: 1px solid #1e1e1e !important;
+    border-radius: 2px !important;
+    margin-top: 1rem !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] h1 {
+    color: #f5f0e8 !important;
+    font-family: 'DM Serif Display', serif !important;
+    font-size: 2.2rem !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] h2 {
+    color: #c8a96e !important;
+    font-family: 'DM Serif Display', serif !important;
+    font-size: 1.6rem !important;
+    font-weight: 400 !important;
+    border-bottom: 1px solid #2a2520 !important;
+    padding-bottom: 0.5rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] h3 {
+    color: #a08858 !important;
+    font-family: 'DM Serif Display', serif !important;
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    margin-top: 1.5rem !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] h1 a,
+.report-body-marker ~ [data-testid="stMarkdownContainer"] h2 a,
+.report-body-marker ~ [data-testid="stMarkdownContainer"] h3 a {
+    display: none !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] p,
+.report-body-marker ~ [data-testid="stMarkdownContainer"] li {
+    color: #cec8bc !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.88rem !important;
+    line-height: 1.9 !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] strong {
+    color: #e8dfc8 !important;
+    font-weight: 600 !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] em {
+    color: #b8b0a0 !important;
+    font-style: italic !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] ul,
+.report-body-marker ~ [data-testid="stMarkdownContainer"] ol {
+    padding-left: 1.5rem !important;
+    margin: 0.5rem 0 !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] li {
+    margin-bottom: 0.4rem !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 0.82rem !important;
+    margin: 1.5rem 0 !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] th {
+    background: #161616 !important;
+    color: #c8a96e !important;
+    padding: 0.6rem 1rem !important;
+    text-align: left !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid #2a2520 !important;
+    font-family: 'DM Mono', monospace !important;
+    font-size: 0.78rem !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] td {
+    padding: 0.6rem 1rem !important;
+    border-bottom: 1px solid #161616 !important;
+    color: #b8b0a0 !important;
+    vertical-align: top !important;
+    font-family: 'DM Mono', monospace !important;
+}
+
+.report-body-marker ~ [data-testid="stMarkdownContainer"] tr:hover td {
+    background: #111111 !important;
+}
